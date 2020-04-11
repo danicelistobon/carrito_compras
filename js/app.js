@@ -9,8 +9,10 @@ const listaCursos = document.querySelector('#lista-carrito tbody');
 eventListeners();
 
 function eventListeners () {
-  // cunaod se da click en agregar carrito
+  // cuando se da click en agregar carrito
   cursos.addEventListener('click', comprarCurso);
+  // cuando se elimina un curso del carrito
+  carrito.addEventListener('click', eliminarCurso);
 }
 
 // Funciones
@@ -51,4 +53,14 @@ function insertarCarrito (curso) {
     </td>
   `;
   listaCursos.appendChild(row);
+}
+
+// elimina el curso del carrito
+function eliminarCurso(event) {
+    event.preventDefault();
+    let curso;
+    // delegation al boton
+    if (event.target.classList.contains('borrar-curso')) {
+        event.target.parentElement.parentElement.remove();
+    }
 }
