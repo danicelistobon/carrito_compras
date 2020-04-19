@@ -1,6 +1,9 @@
 # [Carrito de compras](https://danicelistobon.github.io/carrito_compras/)
 
 This project puts into practice the concepts learned in the basics of JavaScript and some concepts of local storage
+
+<img align="center" src="https://i.imgur.com/RtP6jgw.jpg" width="100%">
+
 - The user can create, delete, or check the courses he wants to purchase in the shopping cart
 - Courses are stored in local storage
 - The cart will load the information stored in local storage in case the user visits the site again
